@@ -1,0 +1,18 @@
+html {
+    font-family: "Verdana", sans-serif;
+}
+
+h1 {
+    color: green;
+}
+
+h2, h3 {
+    background-color: blue;
+    color: white;
+}
+
+img {
+    display: block;
+    width: 20%;
+    height: auto;
+}
