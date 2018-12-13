@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html scrolling="yes">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>KKU FAQs</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        
+
+</head>
+
+    <body>
+
+        <table class = "mainTable">
+            <tr>
+                <td>
+                    <h1 class = "aboutText" style = "color: lightcyan;">Search results</h1>
+                </td>
+
+                <td align = "right" style = "padding-right: 32px;">
+
+                    <div>
+                        <h1 id="menus">
+                            <a href = "index.html">Home</a>&emsp;
+                            <a href = "index.html#faq">Top FAQs</a>&emsp;
+                            <a href = "pantipTagsMockup.html">Tags</a>&emsp;
+                            <a href = "about%20v0.3.html">About</a>&emsp;
+                            <a href = "">API</a>
+                        </h1>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+        
+        <section style = "width: 100%;">
+
+            <form action = "search v2.html" method = "GET">
+
+                <h1 style = "text-align: left;
+                    margin-left: 16px;
+                    font-size: 4vh;
+                    color: lightcyan;
+                    " id = "h-search">Search result for: </h1>
+
+            </form>
+
+            <input id = "input-text" 
+                           class = "searchBox" 
+                           type = "text" 
+                           name = "search" 
+                           placeholder = "Search here!"><br>
+                    <input id = "searchButt" 
+                           class = "searchButton" 
+                           type = "submit" 
+                           name = "search" 
+                           value = "GO">
+
+            
+        </section>
+        
+        <section class = "searchResults" id = "searchResults">
+        </section>
+
+    </body>
+
+    <style>
+
+        body {
+            
+            font-family: Roboto;
+            
+            background-image: url(images/aboutbg.jpg);
+            background-size: cover;
+            
+            margin: 0px;
+            
+        }
+        
+        h1.aboutText {
+            
+            margin: 0px !important;
+            margin-left: 16px !important;
+            color: rgb(255, 222, 201);
+
+            font-size: 6vh;
+            font-family: "Roboto";
+            font-weight: 700;
+            
+        }
+        
+        h1.menus {
+            
+            color: rgb(255, 237, 225);
+    
+            font-size: 4vh;
+            font-family: "Roboto";
+             
+        }
+
+        table.mainTable {
+            
+            width: 100%;
+            margin: 0;
+            
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        a:link {
+            color: lightcyan; !important;
+            text-decoration: none;
+        }
+
+        a:visited { 
+            color: lightcyan; !important;
+        }
+
+        a:hover { 
+            color: white !important;
+        }
+        
+        a:active { 
+            color: white !important;
+        }
+
+    </style>
+
+    <script src="js/mainV2.js"></script>
+    
+
+    
+</html>

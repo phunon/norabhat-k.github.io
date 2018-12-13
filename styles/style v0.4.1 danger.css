@@ -1,0 +1,338 @@
+/* header styles version 0.3*/
+
+html {
+  box-sizing: border-box; 
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+    
+  font-family: 'Roboto', sans-serif;
+    background-color: black;
+    
+}
+
+.head {
+  width: 100%;
+  padding: 50px;
+  
+
+  /*position: fixed;*/
+}
+
+#head {
+    
+    margin-left: 16px;
+    
+    color: rgb(255, 222, 201);
+    
+    font-size: 6vh;
+    font-family: "Roboto" !important;
+    font-weight: 900;
+    
+}
+
+#menus {
+    
+    color: rgb(255, 237, 225);
+    
+    font-size: 4vh;
+    font-family: "Roboto";
+    
+}
+
+.lang {
+  padding: 5px;
+  right: 40px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:link {
+    color: rgb(255, 222, 201); !important;
+    text-decoration: none;
+}
+
+a:visited { 
+    color: rgb(255, 222, 201); !important;
+   
+}
+
+a:hover { 
+    color: white !important;
+    
+}
+a:active { 
+    color: white !important;
+
+}
+
+
+#head:hover {
+  color: rgb(255, 240, 226);
+}
+
+#input-btn {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  height: 40px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+/* section page */
+
+section {
+    height: 100%;
+}
+
+section:nth-of-type(3n+1) {
+    background-size: cover;
+}
+
+section:nth-of-type(1) {
+
+    background-image: url(../images/lib.jpg);
+  
+}
+
+section:nth-of-type(2) {
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%), url("../images/room.jpg") no-repeat;
+
+    
+    background-size: cover;
+    
+    
+}
+
+section.mainSearch {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+section.searchContainer {
+    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 40%;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+div.mainLeft {
+    
+    color: white;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 16px;
+    margin-left: 10%;
+    
+    width: 35%;
+   
+    text-align: right;
+    
+}
+
+div.mainRight {
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 25%;
+    padding-left: 16px;
+    display: flex;
+      
+}
+
+h1.mainLeft {
+    
+    font-size: 9vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+img.imgInFAQ {
+    
+    width: 25%;
+    height: 25%;
+            
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+input.searchBox {
+    
+    font-size: 4vh;
+    
+    border: none;
+    border-bottom: 2px solid white;
+    color: lightgray;
+    background-color: transparent;
+    
+    width: 120%;
+    
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*div.header {
+    
+    background-image: linear-gradient(to bottom, rgb(96, 32, 0, 1), rgb(0, 0, 0, 0));
+  
+    position: fixed;
+  
+    cursor: default;
+    
+    width: 100%;
+    
+}*/
+
+div.dummy {
+    
+    margin-left: 10%;
+    
+}
+
+div.faqHeader {
+    
+}
+
+div.dummyFAQ {
+    
+    height: 16px;
+    
+}
+
+h1.faqHeader {
+    
+    color: white;
+    
+    font-size: 45px;
+    font-family: Roboto;
+    
+    text-align: center;
+    
+}
+
+section.top {
+    
+    padding-top: 65px;
+    
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    
+    font-family: "Roboto";
+    font-weight: 500;
+    
+    background-color: rgb(96, 32, 0);
+    color: #ddd;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    
+    text-align: left;
+    
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: rgb(128, 64, 32, 0.9);
+}
+
+div.panel {
+    padding: 0 16px;
+    background-color: rgb(128, 64, 32, 0.9);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+    
+    border-radius: 0px;
+}
+
+button.accordion:after {
+    content: "+"; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+p.accordionAnswer {
+    
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    
+    color: rgb(200, 200, 200);
+    
+    padding-top: 10px;
+    
+    border-radius: 0px;
+    
+}
+
+table.mainTable {
+    
+    background-image: linear-gradient(to bottom, rgb(96, 32, 0, 1), rgb(0, 0, 0, 0));  
+    position: fixed;
+    cursor: default;
+    
+    
+    width: 100%;
+    
+}
+
+form.inputStuff {
+    
+    display: flex;
+    
+}
+
+input.searchButton {
+    
+    background-color: rgb(128, 64, 32, 0.9);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 4vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    font-family: "Roboto Medium";
+}
+    
+}
+
+
